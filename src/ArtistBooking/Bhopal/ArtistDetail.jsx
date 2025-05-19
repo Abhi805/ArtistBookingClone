@@ -1,8 +1,25 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import './ArtistDetail.css';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./ArtistDetail.css";
+import { useParams } from "react-router-dom";
+
+import image from "./assets33/AnmolGarg1.jpg";
+import photo1 from "./assets33/AnmolGarg1.jpg";
+import photo2 from "./assets33/AnmolGarg2.jpg";
+import photo3 from "./assets33/AnmolGarg3.jpg";
+import photo4 from "./assets33/AnmolGarg4.jpg";
+import photo5 from "./assets33/AnmolGarg5.jpg";
+import photo6 from "./assets33/AnmolGarg6.jpg";
+
+const videoLinks = [
+ 
+  "https://www.youtube.com/embed/madhSjDzYEI?si=f7mMdRbtZgYLySpC",
+  "https://www.youtube.com/embed/wcU3yse-lDA?si=hVUszzGIHqegepV",
+  "https://www.youtube.com/embed/lGzqlL8UAxw?si=32D0jWL-aK6w73h0",
+  "https://www.youtube.com/embed/ho98tKWgh7U?si=bgvDNNyrWd6t8hmc",
+ 
+];
 
 const ArtistDetail = () => {
   useEffect(() => {
@@ -13,66 +30,155 @@ const ArtistDetail = () => {
 
   return (
     <div className="artist-detail-page bg-light">
-      {/* Header Section */}
+       {/* Header Section  */}
       <div className="container py-5 text-center">
-        <h2 className="display-5 fw-bold" data-aos="fade-down">Artist Profile</h2>
-        <p className="text-muted" data-aos="fade-up">Explore details about <strong>{id}</strong></p>
+        <h2 className="display-5 fw-bold" data-aos="fade-down">
+          Artist Profile
+        </h2>
+        <p className="text-muted" data-aos="fade-up">
+          Explore details about <strong>{id}</strong>
+        </p>
       </div>
 
-      {/* Main Content */}
+       {/* Main Content  */}
       <div className="container-fluid px-0">
-        {/* Top Section */}
-        <div className="row g-0 bg-primary text-white align-items-center p-4" data-aos="fade-up">
-          <div className="col-lg-3 text-center mb-3 mb-lg-0">
-            <img
-              src="https://via.placeholder.com/250x300"
-              alt={id}
-              className="img-fluid rounded shadow-lg artist-main-img"
-            />
-          </div>
-          <div className="col-lg-6">
-            <h2 className="fw-bold">{id}</h2>
-            <p>⭐ 4.7 (7430 reviews)</p>
-            <p>Available for corporate events, weddings, and fests. Contact & pricing info below.</p>
-          </div>
-          <div className="col-lg-3">
-            <form className="bg-white p-4 rounded shadow text-dark">
-              <h5 className="mb-3">Book Now</h5>
-              <input type="text" placeholder="Your Name" className="form-control mb-3" />
-              <input type="email" placeholder="Email" className="form-control mb-3" />
-              <input type="text" placeholder="Event Type" className="form-control mb-3" />
-              <input type="text" placeholder="City" className="form-control mb-3" />
-              <button className="btn btn-danger w-100">SUBMIT</button>
-            </form>
+         {/* Top Section - Image, Form, Info Grid Together  */}
+        <div className="container" data-aos="fade-up">
+          <div className="row g-4 align-items-start">
+             {/* Artist Image  */}
+            <div className="col-lg-3 text-center">
+              <img
+                src={image}
+                alt="artist"
+                className="img-fluid rounded shadow-lg artist-main-img"
+              />
+            </div>
+{/* 
+           Booking Form  */}
+            <div className="col-lg-5">
+              <div className="booking-form p-4 bg-white rounded shadow">
+                <h5 className="text-center mb-4 fw-bold">
+                  🎤 Book {id} for Your Event
+                </h5>
+                <form>
+                  <div className="row g-3">
+                    <div className="col-md-6">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Full Name"
+                        required
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <input
+                        type="tel"
+                        className="form-control"
+                        placeholder="Phone Number"
+                        required
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <input
+                        type="email"
+                        className="form-control"
+                        placeholder="Email Address"
+                        required
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Event Type"
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <input
+                        type="date"
+                        className="form-control"
+                        placeholder="Event Date"
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Budget"
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="City Name"
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Type of Requirement"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-center mt-4">
+                    <button className="btn btn-danger w-100 fw-semibold">
+                      🚀 Submit Request
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+             {/* Info Grid  */}
+            <div className="col-lg-4">
+              <div className="row g-3">
+                {[
+                  { icon: "⏱", text: "60-90 Mins" },
+                  { icon: "👥", text: "1-2 Members" },
+                  { icon: "🌍", text: "Worldwide" },
+                  { icon: "🗣", text: "English/Hindi" },
+                  { icon: "🎵", text: "Music/Genre" },
+                  { icon: " 🎤", text: "Artist Type / City" },
+                ].map((item, index) => (
+                  <div className="col-6" key={index}>
+                    <div
+                      className="info-card-glow text-center p-3 rounded h-100"
+                      data-aos="zoom-in-up"
+                    >
+                      <div className="display-5">{item.icon}</div>
+                      <div className="fw-semibold mt-2 fs-6">{item.text}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Info Grid */}
-        <div className="container py-4">
-          <div className="row text-center gy-3" data-aos="fade-up">
-            <div className="col-6 col-md-3">⏱ 60-90 Mins</div>
-            <div className="col-6 col-md-3">👥 1-2 Members</div>
-            <div className="col-6 col-md-3">🌍 Worldwide</div>
-            <div className="col-6 col-md-3">🗣 English/Hindi</div>
-          </div>
-        </div>
-
-        {/* About Section */}
+    
         <div className="container py-4" data-aos="fade-up">
           <h4 className="fw-bold mb-3">About {id}</h4>
           <p className="text-muted">
-            {id} is a talented performer known for their exciting shows and audience engagement. Perfect for a variety of events.
+            {id} Anmol Garg, or "Corporate Babaji," as he likes to call himself, is a Bengaluru stand-up comedian and has created his own space in the genre of corporate and startup humor. The professional qualifications of Garg are in software engineering and entrepreneurship, and this real-life experience informs all his comedic narratives, which run deep within the corporate professionals who are relatable to them.
+
+He was working as a software engineer for IBM before taking the plunge into comedy. After that, he started Sales5X, which is a training and consulting firm for sales. His experiences of having traveled through a variety of jobs in the corporate world provided him with a treasure trove of material, which he now turns into fun and relatable entertainment. His acts generally focus on subjects like office politics, start-up culture, and the brass tacks of corporate life-the realities of homelessness for many working adults.
+
+Garg's unique style of comedic play has attracted numerous admirers on platforms such as LinkedIn and Instagram, where he shares excerpts of his performances and interacts with the audience. Given his ability to speak about workplace issues with humor and authenticity, Garg has become one of the most sought-after performers at corporate events and conferences. Indeed, he has been the performer in several prominent events like the ET Soonicorns Summit 2023, where he enlightened and entertained the audience regarding the insights into corporate dynamics.
+
+Garg is also active on YouTube, where he's established a significant digital property for uploading his stand-up routines that cover every aspect of life in the world today. His brand of wit is sharp but pretty observational, offering refreshing perspectives on living the daily grind of corporate existence.
+
+Through his art, Anmol Garg is continuing to build a bridge between comedy and corporate culture: laughter and seriousness for audiences. The difference he makes is the joyful entertainment he provides for audiences while stirring up thought, discussion, and debate regarding the realities of professional life. Anmol has become a truly unique stand-up comic voice.
           </p>
         </div>
 
-        {/* Photo Gallery */}
         <div className="container py-4" data-aos="fade-up">
           <h5 className="fw-bold mb-3">Photo Gallery</h5>
           <div className="row g-3">
-            {[...Array(6)].map((_, i) => (
+            {[photo1, photo2, photo3, photo4, photo5, photo6].map((img, i) => (
               <div key={i} className="col-6 col-md-4">
                 <img
-                  src={`https://via.placeholder.com/300x200?text=Photo+${i + 1}`}
+                  src={img}
                   className="img-fluid rounded shadow-sm hover-zoom"
                   alt={`${id} Show ${i + 1}`}
                 />
@@ -81,17 +187,17 @@ const ArtistDetail = () => {
           </div>
         </div>
 
-        {/* Video Gallery */}
         <div className="container py-4" data-aos="fade-up">
           <h5 className="fw-bold mb-3">Video Gallery</h5>
           <div className="row g-3">
-            {[...Array(4)].map((_, i) => (
+            {videoLinks.map((link, i) => (
               <div key={i} className="col-6 col-md-3">
                 <div className="ratio ratio-16x9">
                   <iframe
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src={link}
                     title={`Video ${i + 1}`}
                     frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
                 </div>
@@ -100,35 +206,20 @@ const ArtistDetail = () => {
           </div>
         </div>
 
-        {/* Related Artists */}
-        <div className="container py-4" data-aos="fade-up">
-          <h5 className="fw-bold mb-3">Similar Artists</h5>
-          <div className="row g-3">
-            {['Amar', 'Appurv', 'Lakshay', 'Rajnish'].map((name, i) => (
-              <div key={i} className="col-6 col-md-3">
-                <div className="card h-100 shadow-sm text-center border-0">
-                  <img
-                    src="https://via.placeholder.com/200x150"
-                    className="card-img-top rounded-top"
-                    alt={name}
-                  />
-                  <div className="card-body">
-                    <h6 className="fw-semibold">Comedian {name}</h6>
-                    <p className="text-muted">Starts ₹30,000+</p>
-                    <button className="btn btn-outline-danger btn-sm">Book Now</button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Review Section */}
+      
         <div className="container py-4" data-aos="fade-up">
           <h5 className="fw-bold mb-3">Review {id}</h5>
-          <textarea className="form-control mb-3" rows="3" placeholder="Write your review..."></textarea>
-          <button className="btn btn-primary">Submit Review</button>
+          <textarea
+            className="form-control mb-3"
+            rows="3"
+            placeholder="Write your review..."
+          ></textarea>
+          <button className="btn btn-danger w-20">Submit Review</button>
         </div>
+
+
+
+        
       </div>
     </div>
   );
