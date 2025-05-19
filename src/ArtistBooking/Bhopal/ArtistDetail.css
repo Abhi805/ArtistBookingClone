@@ -1,0 +1,20 @@
+.artist-wrapper {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+  }
+  .artist-wrapper h4, .anmol-wrapper h5 {
+    font-weight: 600;
+  }
+  .artist-wrapper .card {
+    transition: transform 0.3s ease;
+  }
+  .artist-wrapper .card:hover {
+    transform: translateY(-5px);
+  }
+    /* ArtistDetail.css */
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
