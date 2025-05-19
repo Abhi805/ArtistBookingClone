@@ -171,12 +171,12 @@ Garg is also active on YouTube, where he's established a significant digital pro
 Through his art, Anmol Garg is continuing to build a bridge between comedy and corporate culture: laughter and seriousness for audiences. The difference he makes is the joyful entertainment he provides for audiences while stirring up thought, discussion, and debate regarding the realities of professional life. Anmol has become a truly unique stand-up comic voice.
           </p>
         </div>
-
+        {/* gallery image */}
         <div className="container py-4" data-aos="fade-up">
           <h5 className="fw-bold mb-3">Photo Gallery</h5>
           <div className="row g-3">
             {[photo1, photo2, photo3, photo4, photo5, photo6].map((img, i) => (
-              <div key={i} className="col-6 col-md-4">
+              <div key={i} className="col-6 col-md-3 kap">
                 <img
                   src={img}
                   className="img-fluid rounded shadow-sm hover-zoom"
