@@ -62,7 +62,8 @@ const Ujjain = () => {
                       <h6 className="card-title fw-bold">{artist.name}</h6>
                       <p className="text-muted mb-1">⭐ {artist.rating} ({artist.reviews} Reviews)</p>
                       <p className="text-muted small">Performance Duration: {artist.duration}</p>
-                      <button className="btn btn-danger btn-sm">BOOK NOW</button>
+                      <Link to="/ArtistDetail4"
+                      className="btn btn-danger btn-sm">BOOK NOW</Link>
                     </div>
                   </div>
                 </div>  
@@ -71,8 +72,8 @@ const Ujjain = () => {
             <div className="text-center">
               <Link to="/comedians"
                 className="btn btn-outline-danger" >
-                View More →
-              </Link>
+                View More → 
+              </Link> 
             </div>
           </div>
         ))}

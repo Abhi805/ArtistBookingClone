@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./ArtistDetail.css";
+import "./ArtistDetail4.css";
 import { useParams } from "react-router-dom";
 
-import image from "./assets33/AnmolGarg1.jpg";
-import photo1 from "./assets33/AnmolGarg1.jpg";
-import photo2 from "./assets33/AnmolGarg2.jpg";
-import photo3 from "./assets33/AnmolGarg3.jpg";
-import photo4 from "./assets33/AnmolGarg4.jpg";
-import photo5 from "./assets33/AnmolGarg5.jpg";
-import photo6 from "./assets33/AnmolGarg6.jpg";  
+import image from "./assets30/artist1.jpg";
+import photo1 from "./assets30/artist2.avif";
+import photo2 from "./assets30/artist3.jpg";
+import photo3 from "./assets30/artist4.webp";
+import photo4 from "./assets30/artist5.jpg";  
+import photo5 from "./assets30/artist6.webp";
+import photo6 from "./assets30/artist7.jpeg";  
    
 const videoLinks = [
   "https://www.youtube.com/embed/madhSjDzYEI?si=f7mMdRbtZgYLySpC",

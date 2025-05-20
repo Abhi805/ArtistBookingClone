@@ -4,14 +4,13 @@
    import "./ArtistDetail1.css";
    import { useParams } from "react-router-dom";
    
-   import image from "./assets33/AnmolGarg1.jpg";
-   import photo1 from "./assets33/AnmolGarg1.jpg";
-   import photo2 from "./assets33/AnmolGarg2.jpg";
-   import photo3 from "./assets33/AnmolGarg3.jpg";
-   import photo4 from "./assets33/AnmolGarg4.jpg";
-   import photo5 from "./assets33/AnmolGarg5.jpg";
-   import photo6 from "./assets33/AnmolGarg6.jpg";
-      
+   import image from "./assets32/artist1.jpg";
+   import photo1 from "./assets32/artist2.jpeg";
+   import photo2 from  "./assets32/artist3.jpeg";
+   import photo3 from  "./assets32/artist4.jpeg";
+   import photo4 from   "./assets32/artist5.jpg";
+   import photo5 from   "./assets32/artist6.webp";
+   import photo6 from   "./assets32/artist7.jpeg";      
    const videoLinks = [
      "https://www.youtube.com/embed/madhSjDzYEI?si=f7mMdRbtZgYLySpC",
      "https://www.youtube.com/embed/wcU3yse-lDA?si=hVUszzGIHqegepV",

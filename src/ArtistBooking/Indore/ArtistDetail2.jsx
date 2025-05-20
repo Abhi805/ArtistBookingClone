@@ -1,22 +1,26 @@
   import React, { useEffect } from "react";
   import AOS from "aos";
   import "aos/dist/aos.css";
-  import "./ArtistDetail.css";
+  import "./ArtistDetail2.css";
   import { useParams } from "react-router-dom";
   
-  import image from "./assets33/AnmolGarg1.jpg";
-  import photo1 from "./assets33/AnmolGarg1.jpg";
-  import photo2 from "./assets33/AnmolGarg2.jpg";
-  import photo3 from "./assets33/AnmolGarg3.jpg";
-  import photo4 from "./assets33/AnmolGarg4.jpg";
-  import photo5 from "./assets33/AnmolGarg5.jpg";
-  import photo6 from "./assets33/AnmolGarg6.jpg";  
+  import image from "./assets1/Ankita1.webp";
+  import photo1 from "./assets1/Ankita2.jpg";
+  import photo2 from "./assets1/Ankita3.jpg";
+  import photo3 from "./assets1/Ankita4.jpg";  
+  import photo4 from "./assets1/Ankita5.avif";
+  import photo5 from "./assets1/Ankita6.jpg";  
+  
      
   const videoLinks = [
-    "https://www.youtube.com/embed/madhSjDzYEI?si=f7mMdRbtZgYLySpC",
-    "https://www.youtube.com/embed/wcU3yse-lDA?si=hVUszzGIHqegepV",
-    "https://www.youtube.com/embed/lGzqlL8UAxw?si=32D0jWL-aK6w73h0",
-    "https://www.youtube.com/embed/ho98tKWgh7U?si=bgvDNNyrWd6t8hmc",
+
+"https://www.youtube.com/embed/1rv6FsAnFqQ?si=mydlh8E4_Ug_5xY8",
+
+"https://www.youtube.com/embed/AHPX44mi0us?si=i3rtOpp_pO76fxnT",
+
+  "https://www.youtube.com/embed/mwYgMljzYzs?si=U9oWj-IlfB_8EMjk",
+
+  "https://www.youtube.com/embed/OjAlI2nEG7I?si=5To7aJw3xoWiDAiX",
   ];
     
   const ArtistDetail = () => {
@@ -188,7 +192,7 @@
           <div className="container py-4" data-aos="fade-up">
             <h5 className="fw-bold mb-3">Photo Gallery</h5>
             <div className="row g-3">
-              {[photo1, photo2, photo3, photo4, photo5, photo6].map((img, i) => (
+              {[photo1, photo2, photo3, photo4, photo5,].map((img, i) => (
                 <div key={i} className="col-6 col-md-3 kap">
                   <img
                     src={img}

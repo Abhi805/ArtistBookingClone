@@ -16,7 +16,7 @@ import image13 from '../../components/CorporateEventPlanner/imagesss/lenskart.jp
 import image14 from '../../components/CorporateEventPlanner/imagesss/sopa.jpeg';
 
 const CorporateEventPlanner = () => {
-  return (
+  return (   
     <section className="FirstCategory divforbg">
       <div className="container cont10">
         <div className="row">

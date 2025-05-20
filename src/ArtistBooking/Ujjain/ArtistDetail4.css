@@ -79,7 +79,7 @@ textarea.form-control:focus {
 }
 
 /* Video Embed Frame */
-.ratio iframe {
+.ratio iframe {   
   border-radius: 0.75rem;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: all 0.3s ease;

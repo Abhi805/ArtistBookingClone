@@ -22,10 +22,29 @@ import Bhopal from "./ArtistBooking/Bhopal/Bhopal";
 import Gwalior from "./ArtistBooking/Gwalior/Gwalior";
 import Jabalpur from "./ArtistBooking/Jabalpur/Jabalpur";
 import Ujjain from "./ArtistBooking/Ujjain/Ujjain";
+
+
+
+
 import Comedians from "./ArtistBooking/Bhopal/Comedians";
+
 import ArtistDetail from "./ArtistBooking/Bhopal/ArtistDetail";
+import ArtistDetail1 from "./ArtistBooking/Gwalior/ArtistDetail1";
+import ArtistDetail2 from "./ArtistBooking/Indore/ArtistDetail2";
+import ArtistDetail3 from "./ArtistBooking/Jabalpur/ArtistDetail3";
+import ArtistDetail4 from "./ArtistBooking/Ujjain/ArtistDetail4";
+
+
+
+
+
+
+
+
+
 
 import IndoreCity from "./VenueBooking/IndoreCity/IndoreCity";
+
 import BhopalCity from "./VenueBooking/BhopalCity/BhopalCity";
 // import JabalpurCity from "./VenueBooking/JabalpurCity/JabalpurCity";
 import GwaliorCity from "./VenueBooking/GwaliorCity/GwaliorCity";
@@ -110,14 +129,37 @@ function App() {
 
           <Route path="/Comedians" element={<Comedians />} />
           <Route path="/ArtistDetail" element={<ArtistDetail />} />
+          <Route path="/ArtistDetail1" element={<ArtistDetail1 />} />
+          <Route path="/ArtistDetail2" element={<ArtistDetail2 />} />
+          <Route path="/ArtistDetail3" element={<ArtistDetail3 />} />
+          <Route path="/ArtistDetail4" element={<ArtistDetail4 />} />
+
+
+
+
+
+
+
+
 
           <Route path="/IndoreCity" element={<IndoreCity />} />
           <Route path="/BhopalCity" element={<BhopalCity />} />
           <Route path="/GwaliorCity" element={<GwaliorCity />} />
           {/* <Route path="/JabalpurCity" element={<JabalpurCity />} /> */}
+          
+          
+          
           <Route path="/UjjainCity" element={<UjjainCity />} />
+          
+          
+          
           {/* <Route path="/EventPopup" element={<EventPopup />} /> */}
 
+          
+          
+          
+          
+          
           <Route path="/BasicDetail" element={<BasicDetail />} />
           <Route path="/PrfoInfo" element={<PrfoInfo />} />
           <Route path="/AddInfo" element={<AddInfo />} />
@@ -132,7 +174,16 @@ function App() {
          <Route path="/EventBookingModel6" element={<EventBookingModel6 />} /> 
          <Route path="/EventBookingModel7" element={<EventBookingModel7 />} /> 
          <Route path="/EventBookingModel8" element={<EventBookingModel8 />} /> 
-
+ 
+         
+         
+         
+         
+         
+         
+         
+         
+         
          {/* <Route path="/EventBookingModel9" element={<EventBookingModel9 />} /> 
          <Route path="/EventBookingModel10" element={<EventBookingModel10 />} /> 
          <Route path="/EventBookingModel11" element={<EventBookingModel11 />} /> 
@@ -144,6 +195,9 @@ function App() {
          <Route path="/EventBookingModel15" element={<EventBookingModel15 />} /> 
          <Route path="/EventBookingModel16" element={<EventBookingModel16 />} /> 
          <Route path="/EventBookingModel17" element={<EventBookingModel17 />} />  */}
+
+
+
            
         </Routes>
         <Footer />

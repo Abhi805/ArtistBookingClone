@@ -15,7 +15,7 @@ import artist4 from '../../ArtistBooking/Indore/assets1/artist4.jpeg';
 const Indore = () => {
   useEffect(() => {
     AOS.init({ duration: 800 });
-  }, []);
+  }, []);    
 
   const navigate = useNavigate(); // ✅ Step 2: Initialize navigate
 
@@ -59,7 +59,7 @@ const Indore = () => {
                       <h6 className="card-title fw-bold">{artist.name}</h6>
                       <p className="text-muted mb-1">⭐ {artist.rating} ({artist.reviews} Reviews)</p>
                       <p className="text-muted small">Performance Duration: {artist.duration}</p>
-                      <Link to="/"
+                      <Link to="/ArtistDetail2"
                       className="btn btn-danger btn-sm">BOOK NOW</Link>
                     </div>
                   </div>

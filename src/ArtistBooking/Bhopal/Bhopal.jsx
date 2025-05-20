@@ -65,7 +65,7 @@ const Bhopal = () => {
                     </div>
                   </div>
                 </div>
-              ))}
+              ))}  
             </div>
             <div className="text-center">
               <Link
