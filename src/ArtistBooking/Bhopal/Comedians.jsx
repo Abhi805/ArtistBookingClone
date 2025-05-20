@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import './Comedians.css';
 import { Link, useNavigate } from 'react-router-dom';
 
-import artist from './assets33/artist.jpg';
+import artist from './assets33/AnmolGarg1.jpg';
 import artist1 from './assets33/artist1.jpeg';
 import artist2 from './assets33/artist2.jpeg';
 import artist3 from './assets33/artist3.jpg';
@@ -31,7 +31,7 @@ const Comedians = () => {
     {
       title: "Book The Best Live Band For Events And Weddings In Bhopal",
       artists: [
-        { name: "Dr. Anjana Jha", image: artist, rating: "4.5★", reviews: "1010", duration: "90-100 Mins" },
+        { name: "Anmol Garg", image: artist, rating: "4.5★", reviews: "1010", duration: "90-100 Mins" },
         { name: "Ayush Rojariya", image: artist1, rating: "4.5★", reviews: "1010", duration: "90-100 Mins" },
         { name: "Shahab Masoom", image: artist2, rating: "4.6★", reviews: "1375", duration: "90-130 Mins" },
         { name: "Hemesh Raj", image: artist3, rating: "4.4★", reviews: "1578", duration: "85-120 Mins" },

@@ -10,7 +10,7 @@ import img3 from '../../VenueBooking/BhopalCity/assets20/jahannuma.webp';
 import img4 from '../../VenueBooking/BhopalCity/assets20/sabhapalce.webp';
 import img5 from '../../VenueBooking/BhopalCity/assets20/rajabhoj.webp';
 
-  
+    
 const BhopalCity = () => {
   useEffect(() => {
     AOS.init({ once: true, duration: 800, easing: 'ease-out-quart' });

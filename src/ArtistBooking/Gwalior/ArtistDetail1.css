@@ -1,4 +1,4 @@
-.artist-detail-page {
+   .artist-detail-page {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f9fa;
 }
@@ -13,7 +13,7 @@
   color: #ffca08;
 }
 
-.star-rating .star:hover ~ .star {   
+.star-rating .star:hover ~ .star {
   color: #ccc;
 }    
 
